@@ -1,0 +1,24 @@
+{
+  "name": "astro-new-coll-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mundry/astro-new-coll-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mundry/astro-new-coll-api/issues"
+  },
+  "homepage": "https://github.com/mundry/astro-new-coll-api#readme",
+  "dependencies": {
+    "astro": "^0.18.0-next.4"
+  }
+}
