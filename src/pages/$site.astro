@@ -1,0 +1,25 @@
+---
+export async function createCollection() {
+  const sites = [{domain: 'example-a.com'}, {domain: 'example-b-com'}, {domain: 'example-c-com'}];
+  const routes = sites.map(({domain}) => ({params: {domain}}));
+  console.log(routes);
+  return {
+    route: `/site/:domain`,
+    paths() {
+      return routes;
+    },
+    async props({ params }) {
+      console.log('Constructing props for: ' + params.domain);
+      return {domain: params.domain};
+    },
+  };
+}
+
+const {domain} = Astro.props;
+---
+<html lang="en">
+  <head>
+    <title>{domain}</title>
+  </head>
+  <body>{domain}</body>
+</html>
